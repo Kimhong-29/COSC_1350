@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="text-align: center; font-family: Arial, sans-serif;">
+<body>
 
-    <header style="background-color: lightblue; padding: 20px;">
+    <div class="sidebar">
+        <p>This is a side bar</p>
+    </div>
 
-        <h1>KimHong Poun</h1>
+    <header>
+
+        <h1 id="my-name">KimHong Poun</h1>
 
         <h3>Student</h3>
 
-        <img src="images/profile.png" alt="My profile picture" width="500">
+        <img class="profile-picture"
+             src="images/profile.png"
+             alt="My profile picture">
 
         <p>
             Hi, my name is KimHong Poun. I am a student at Western Wyoming Community College.
             I am learning computer science and web development.
         </p>
 
-        <a href="inspirations.html">inspirations</a>
+        <a href="inspiration.html">inspirations</a>
 
     </header>
 
@@ -29,13 +36,26 @@
 
         <h3>Programming languages used on this site</h3>
 
-        <ul style="list-style-position: inside;">
+        <ul>
             <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
         </ul>
 
     </div>
 
-    <footer style="background-color: rgb(161, 210, 227); padding: 20px;">
+    <div class="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am learning web development and computer science.
+            I enjoy working with computers and learning how websites are made.
+        </p>
+
+    </div>
+
+    <footer>
 
         <a href="mailto:kimhongpoun@westernwyoming.edu">
             kimhongpoun@westernwyoming.edu
