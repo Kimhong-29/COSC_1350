@@ -1,27 +1,30 @@
 body {
+    margin: 0;
     text-align: center;
     font-family: Arial, sans-serif;
     background-color: white;
-    margin: 0;
 }
 
 header {
     background-color: lightblue;
-    padding: 20px;
+    padding: 30px;
 }
 
 footer {
-    background-color: rgb(106, 165, 185);
+    background-color: rgb(161, 210, 227);
     padding: 20px;
+    margin-top: 30px;
 }
 
 #my-name {
     font-family: Georgia, serif;
+    font-size: 40px;
 }
 
 .profile-picture {
     width: 500px;
     border: 5px solid black;
+    border-radius: 10px;
 }
 
 .sidebar {
@@ -31,9 +34,39 @@ footer {
     width: 100px;
     height: 200px;
     background-color: lightgray;
-    border: 2px solid rgb(210, 46, 46);
+    border: 2px solid black;
 }
 
 .about {
-    padding: 30px;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.interests {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+li {
+    margin: 8px;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
