@@ -1,0 +1,34 @@
+.calculator {
+    width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 8px solid black;
+    background-color: #e7eee7;
+}
+
+.calculator h1 {
+    font-size: 50px;
+}
+
+.calculator label {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.calculator input,
+.calculator select {
+    width: 90%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.calculator button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 12px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
