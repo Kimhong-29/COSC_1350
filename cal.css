@@ -1,34 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 50px 15px;
+}
+
 .calculator {
-    width: 600px;
-    margin: 40px auto;
+    max-width: 400px;
+    margin: auto;
     padding: 30px;
-    border: 8px solid black;
-    background-color: #e7eee7;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.calculator h1 {
-    font-size: 50px;
+h1 {
+    color: #2563eb;
 }
 
-.calculator label {
+label {
     display: block;
-    font-size: 25px;
-    font-weight: bold;
     margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
 }
 
-.calculator input,
-.calculator select {
-    width: 90%;
-    padding: 15px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-.calculator button {
+input, select {
     display: block;
-    margin: 40px auto 0;
-    padding: 12px 25px;
-    font-size: 20px;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#tipOutput {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #15803d;
 }
