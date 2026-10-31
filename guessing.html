@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="guessing.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Number Guessing Game</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="inspirations.html">Inspirations</a>
+            <a href="guessing.html">Guessing Game</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Number guessing game</h2>
+
+        <p>
+            We have selected a random number between 1 and 100.
+            See if you can guess it in 10 turns or fewer.
+            We'll tell you if your guess was too high or too low.
+        </p>
+
+        <form id="guessForm">
+            <label for="guessField">Enter a guess:</label>
+
+            <input
+                type="number"
+                id="guessField"
+                min="1"
+                max="100"
+                required
+            >
+
+            <button type="submit" id="guessSubmit">
+                Submit guess
+            </button>
+        </form>
+
+        <div class="resultParas">
+            <p id="guesses"></p>
+            <p id="lastResult"></p>
+            <p id="lowOrHi"></p>
+        </div>
+
+        <button id="restartButton" type="button" hidden>
+            Start new game
+        </button>
+
+    </main>
+
+    <footer>
+        <a href="mailto:kimhongpoun@westernwyoming.edu">
+            kimhongpoun@westernwyoming.edu
+        </a>
+    </footer>
+
+</body>
+</html>
