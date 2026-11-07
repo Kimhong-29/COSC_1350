@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Draw Shapes Using Canvas</title>
+</head>
+<body>
+
+   <h1>Draw Shapes Using Canvas</h1>
+
+   <canvas id="myCanvas" width="600" height="200"></canvas>
+
+   <script>
+      let canvas = document.getElementById("myCanvas");
+      let cx = canvas.getContext("2d");
+
+      function drawTrapezoid(x, y) {
+         cx.beginPath();
+         cx.moveTo(x + 20, y);
+         cx.lineTo(x + 60, y);
+         cx.lineTo(x + 80, y + 50);
+         cx.lineTo(x, y + 50);
+         cx.closePath();
+         cx.stroke();
+      }
+
+      function drawDiamond(x, y) {
+         cx.save();
+         cx.translate(x, y);
+         cx.rotate(Math.PI / 4);
+         cx.fillStyle = "red";
+         cx.fillRect(-25, -25, 50, 50);
+         cx.restore();
+      }
+
+      function drawZigzag(x, y) {
+         cx.beginPath();
+         cx.moveTo(x, y);
+
+         for (let i = 0; i < 10; i++) {
+            let newX = i % 2 === 0 ? x + 70 : x;
+            let newY = y + (i + 1) * 8;
+            cx.lineTo(newX, newY);
+         }
+
+         cx.stroke();
+      }
+
+      function drawSpiral(x, y) {
+         cx.beginPath();
+
+         for (let i = 0; i <= 100; i++) {
+            let angle = i * 0.2;
+            let radius = i * 0.4;
+            let newX = x + Math.cos(angle) * radius;
+            let newY = y + Math.sin(angle) * radius;
+
+            if (i === 0) {
+               cx.moveTo(newX, newY);
+            } else {
+               cx.lineTo(newX, newY);
+            }
+         }
+
+         cx.stroke();
+      }
+
+      function drawStar(x, y) {
+         cx.beginPath();
+
+         for (let i = 0; i < 16; i++) {
+            let angle = i * Math.PI / 8 - Math.PI / 2;
+            let radius = i % 2 === 0 ? 45 : 20;
+            let newX = x + Math.cos(angle) * radius;
+            let newY = y + Math.sin(angle) * radius;
+
+            if (i === 0) {
+               cx.moveTo(newX, newY);
+            } else {
+               cx.lineTo(newX, newY);
+            }
+         }
+
+         cx.closePath();
+         cx.fillStyle = "yellow";
+         cx.fill();
+      }
+
+      drawTrapezoid(20, 70);
+      drawDiamond(160, 100);
+      drawZigzag(230, 60);
+      drawSpiral(390, 100);
+      drawStar(530, 100);
+
+   </script>
+
+</body>
+</html>
