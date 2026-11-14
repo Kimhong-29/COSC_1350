@@ -1,0 +1,33 @@
+/*
+Author: KimHong Poun
+Date: 11/13/2026
+File Name: breakout.css
+*/
+
+body {
+    background-color: #152238;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: #00d9ff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #dddddd;
+    font-size: 16px;
+}
+
+#myCanvas {
+    display: block;
+    margin: 25px auto;
+    background-color: #0b1423;
+    border: 4px solid #00d9ff;
+    border-radius: 8px;
+}
